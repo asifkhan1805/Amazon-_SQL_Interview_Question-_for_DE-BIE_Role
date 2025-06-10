@@ -1,12 +1,12 @@
-#🚀 Hierarchical Market Sales Aggregation
+# 🚀 Hierarchical Market Sales Aggregation
 
-##📦 Overview
+## 📦 Overview
 
 This problem demonstrates how to process and flatten hierarchical sales data using SQL. The provided solution supports aggregating sales from multiple levels in a market hierarchy (Country → State → City), and can generate either a simplified or sophisticated output as required.
 
 ---
 
-##🚀 Problem Statement
+## 🚀 Problem Statement
 
 Given two tables:
 
@@ -19,9 +19,9 @@ Given two tables:
 
 ---
 
-##🗂️ Sample Data
+## 🗂️ Sample Data
 
-###➡️ Market Sales (`input_table_1`)
+### ➡️ Market Sales (`input_table_1`)
 
 | Market       | Sales |
 |--------------|-------|
@@ -39,7 +39,7 @@ Given two tables:
 | Hubli        | 12    |
 | Bhopal       | 5     |
 
-###➡️ Market Hierarchy (`input_table_2`)
+### ➡️ Market Hierarchy (`input_table_2`)
 
 | Country | State       | City      |
 |---------|-------------|-----------|
@@ -58,9 +58,9 @@ Given two tables:
 
 ---
 
-##🎯 Expected Outputs
+## 🎯 Expected Outputs
 
-###🌱 1. Simplified Output
+### 🌱 1. Simplified Output
 
 | Country | State       | City      | Sales |
 |---------|-------------|-----------|-------|
@@ -78,7 +78,7 @@ Given two tables:
 | India   | Delhi       |           | 12    |
 | India   |             |           | 3     |
 
-###🌳 2. Sophisticated Output
+### 🌳 2. Sophisticated Output
 
 | Country | State       | City                | Sales |
 |---------|-------------|---------------------|-------|
@@ -98,7 +98,7 @@ Given two tables:
 
 ---
 
-##🛠️ Solution Approach
+## 🛠️ Solution Approach
 
 1. **Map Sales** to the lowest level possible using the market hierarchy.
 2. For each state and country, **calculate residuals** as the portion left after assigning child sales.
@@ -106,7 +106,7 @@ Given two tables:
 4. The outputs can help roll up sales as required, handling even complex multi-level market reporting.
 
 ----
-##📁  Directory Structure
+## 📁  Directory Structure
 
 | File/Directory             | Description                                                   |
 |---------------------------|----------------------------------------------------------------|
@@ -120,20 +120,20 @@ Code
 
 ---
 
-##🤔 Notes
+## 🤔 Notes
 
 - This project is generic and easily extensible to other hierarchical sales structures.
 - Adjust input tables and logic for more levels or complex geography as needed.
 
 ---
 
-##📜 License
+## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Asif Khan Mohammed.
 
