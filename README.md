@@ -98,12 +98,21 @@ Given two tables:
 
 ---
 
-## 🛠️ Solution Approach
+## 🦾 Approach (Simplified Output, Step-by-Step)
+Extract city-level sales:
+Match cities in the hierarchy with city-level sales from the sales table.
 
-1. **Map Sales** to the lowest level possible using the market hierarchy.
-2. For each state and country, **calculate residuals** as the portion left after assigning child sales.
-3. **Format residuals** with clear labels and groupings to allow easy aggregation at any level.
-4. The outputs can help roll up sales as required, handling even complex multi-level market reporting.
+Calculate state-level residuals:
+For each state, subtract the sum of its city sales from the total state sales to get leftover state sales.
+
+Combine city and state data:
+List all city sales and all non-zero state-level residuals.
+
+Calculate country-level residuals:
+For each country, subtract the sum of all its state and city sales from the total country sales to get any leftover country sales.
+
+Prepare the final output:
+Combine all city sales, state residuals, and country residuals into one flat table for easy aggregation.
 
 ----
 ## 📁  Directory Structure
