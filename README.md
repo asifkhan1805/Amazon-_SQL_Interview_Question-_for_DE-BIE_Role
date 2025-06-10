@@ -1,8 +1,8 @@
-# SQL Hierarchical Market Sales Aggregation
+# Hierarchical Market Sales Aggregation
 
 ## Overview
 
-This project demonstrates how to process and flatten hierarchical sales data using SQL. The provided solution supports aggregating sales from multiple levels in a market hierarchy (Country → State → City), and can generate either a simplified or sophisticated output as required.
+This problem demonstrates how to process and flatten hierarchical sales data using SQL. The provided solution supports aggregating sales from multiple levels in a market hierarchy (Country → State → City), and can generate either a simplified or sophisticated output as required.
 
 ---
 
@@ -135,7 +135,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-Asif Khan Mohammed
+Asif Khan Mohammed.
+
 linkedIN: [Link Text](https://www.linkedin.com/in/asif-khan-mohammed-aksi/).
 email: [Link Text](asif.md1805@gmail.com).
 github: [Link Text](https://github.com/asifkhan1805).
