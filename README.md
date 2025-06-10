@@ -99,20 +99,24 @@ Given two tables:
 ---
 
 ## 🦾 Approach (Simplified Output, Step-by-Step)
-Extract city-level sales:
-Match cities in the hierarchy with city-level sales from the sales table.
+1. **Extract city-level sales:**  
+   Match city names in the hierarchy to the sales table to get all city-specific sales.
 
-Calculate state-level residuals:
-For each state, subtract the sum of its city sales from the total state sales to get leftover state sales.
+2. **Calculate state-level residuals:**  
+   For each state, subtract the total of all its city sales from the state’s direct sales. The difference (if not zero) is the state-level leftover.
 
-Combine city and state data:
-List all city sales and all non-zero state-level residuals.
+3. **Combine city and state results:**  
+   List every city’s sales and all non-zero state-level residual sales.
 
-Calculate country-level residuals:
-For each country, subtract the sum of all its state and city sales from the total country sales to get any leftover country sales.
+4. **Calculate country-level residuals:**  
+   For each country, subtract the total of all its city and state-assigned sales from its overall country sales. The difference (if not zero) is the country-level leftover.
 
-Prepare the final output:
-Combine all city sales, state residuals, and country residuals into one flat table for easy aggregation.
+5. **Produce the final output:**  
+   Output a flat table that includes all city sales, state-level leftovers, and country-level leftovers for complete, non-overlapping reporting.
+
+---
+
+**This ensures each sale is uniquely assigned, roll-up ready, and easily aggregated at any level of the hierarchy.**
 
 ----
 ## 📁  Directory Structure
