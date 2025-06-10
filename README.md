@@ -1,1 +1,1 @@
-# Amazon-_SQL_Interview_Question_for_DE-BIE_Role
+# Amazon-_SQL_Interview_Question_for_DE/BIE_Role
