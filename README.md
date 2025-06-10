@@ -136,9 +136,9 @@ This project is licensed under the [MIT License](LICENSE).
 ## Author
 
 Asif Khan Mohammed
-linkedIN: [Link Text](https://www.linkedin.com/in/asif-khan-mohammed-aksi/) 
-email: [Link Text](asif.md1805@gmail.com)
-github: 
+linkedIN: [Link Text](https://www.linkedin.com/in/asif-khan-mohammed-aksi/).
+email: [Link Text](asif.md1805@gmail.com).
+github: [Link Text](https://github.com/asifkhan1805).
 
 ---
 
